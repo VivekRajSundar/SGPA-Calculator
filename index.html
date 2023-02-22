@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+
+    <title>Semester Result Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculate your results</h1>
+    </header>
+    <div class="container">
+      <div class="row">
+        <input type="file" id="input" accept=".xls, .xlsx" />
+
+        <div class="btn-container">
+          <button id="button" class="button">Convert</button>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Search Students"
+          id="search-input"
+          class="search-val"
+        />
+      </div>
+      <div class="result-data">
+        <table id="data-table" class="table">
+          <thead>
+            <tr class="heading">
+              <th>Name</th>
+              <th>Register Number</th>
+              <th>Python</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Name">Elon Musk</td>
+              <td data-label="Register Number">2101CA20110</td>
+              <td data-label="Python">85</td>
+            </tr>
+            <tr>
+              <td data-label="Name">Jeff Bezos</td>
+              <td data-label="Register Number">2101CA20114</td>
+              <td data-label="Python">87</td>
+            </tr>
+            <tr>
+              <td data-label="Name">Tony Stark</td>
+              <td data-label="Register Number">2101CA20115</td>
+              <td data-label="Python">89</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

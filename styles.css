@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Header styles */
+
+header {
+  margin-top: 20px;
+  font-variant: small-caps;
+}
+
+header h1 {
+  text-align: center;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+/* Row styles */
+.row {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.button {
+  cursor: pointer;
+}
+
+/* Search bar designs */
+.search {
+  margin-top: 20px;
+}
+
+.search-val {
+  width: 100%;
+  margin: 15px;
+  padding: 15px 10px;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+/* Table designs */
+/* .result-data {
+  align-self: stretch;
+  justify-self: center;
+} */
+
+.table {
+  margin-top: 15px;
+}
+
+.table tr {
+  background-color: aliceblue;
+}
+
+.table,
+td,
+th {
+  padding: 10px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.table {
+  border: 1px solid black;
+}
+
+.table .heading {
+  background-color: #32638f;
+  color: whitesmoke;
+}
+
+.table td {
+  text-align: center;
+}
+
+@media (max-width: 1270px) {
+  .table {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+
+  .result-data {
+    align-self: stretch;
+    justify-self: center;
+  }
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 15px;
+  }
+
+  .table tbody tr td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    text-align: left;
+    font-weight: 600;
+    padding-left: 15px;
+  }
+
+  .table,
+  tbody,
+  thead,
+  .table td:before,
+  tr {
+    border-collapse: collapse;
+    border: none;
+  }
+}
