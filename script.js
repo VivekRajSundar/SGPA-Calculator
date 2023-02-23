@@ -124,7 +124,6 @@ searchInput.addEventListener("keyup", (event) => {
   value = value.toLowerCase();
 
   let filteredData = dataArray.filter((obj) => {
-    console.log(obj);
     if (obj.Name.toLowerCase().includes(value)) return obj;
   });
   //console.log(filteredData);
